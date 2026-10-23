@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./content/images/i.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <form class="card">
+      <fieldset>
+        <legend class="title-1">Ваши личные данные</legend>
+        <div class="card-box">
+          <label>
+            <span class="main">Ваше имя</span>
+            <input
+              class="main_input"
+              name="name"
+              type="text"
+              placeholder="Name"
+              required
+            />
+          </label>
+          <label>
+            <span class="main">Ваш возраст</span>
+            <input
+              class="main_input"
+              name="age"
+              type="number"
+              placeholder="Age"
+              required
+            />
+          </label>
+          <label>
+            <span class="main">Ваш номер</span>
+            <input
+              class="main_input"
+              name="number"
+              type="tel"
+              placeholder="Number"
+              required
+            />
+          </label>
+          <label>
+            <span class="main">Ваша почта</span>
+            <input
+              class="main_input"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="title-2">Сообщение</legend>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="about myself"
+          required
+        ></textarea>
+        <div class="check">
+          <div class="container">
+            <label class="check_conteiner">
+              <input type="checkbox" name="one" value="one" required />
+              <span class="button">Я принимаю правила сервера</span>
+            </label>
+            <label class="check_conteiner">
+              <input type="checkbox" name="two" value="one" required />
+              <span class="button">Я согласен оформить кредит на свое имя</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit">Отправить форму</button>
+      <a
+        href="https://www.sravni.ru/kredity/onlajn-zayavka-na-kredit/?utm_source=yandex&utm_medium=cpc&utm_term=---autotargeting&position_type=premium&utm_campaign=sravni_conscred_search_rf_core_708588294&utm_placement=none_%7Bdevice%7D&utm_content=pos--premium.3--camp--type1--ad--17674493775--dvc--desktop--mtch--.--coef--0--src--none.search.none--reg--Красноярск.62--ycl--7829196776992669695&etext=2202.K6j74SG103rKIEPWdQ2-tU2hIMfe5n8nj7SY-qTRoO5qeXZmd2l5dm1vcHNubm16.0090dbff84ae7a432c7a9833cbf1bda487dcf574&yclid=7829196776992669695&amount=500000&period=P3Y&purpose=Money"
+      >
+        Пасхалко</a
+      >
+    </form>
+  </body>
+</html>
