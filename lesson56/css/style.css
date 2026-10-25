@@ -56,5 +56,6 @@ a {
   padding-bottom: 30px;
   border-bottom: 1px solid #333;
   flex-wrap: wrap;
+  gap: 35px;
 }
 
