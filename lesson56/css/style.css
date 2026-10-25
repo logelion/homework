@@ -55,5 +55,6 @@ a {
 .header_container {
   padding-bottom: 30px;
   border-bottom: 1px solid #333;
+  flex-wrap: wrap;
 }
 
