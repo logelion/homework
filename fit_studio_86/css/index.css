@@ -1,0 +1,246 @@
+.hero {
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 106px;
+  width: 100%;
+  height: 48px;
+  background: url("../content/images/декор\ 2.svg") repeat-x;
+}
+
+.hero_container {
+  display: flex;
+  gap: 28px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+strong {
+  color: #3596ed;
+  font-weight: 600;
+}
+.hero-text,
+.text-absolute {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.hero-text {
+  max-width: 440px;
+  margin-bottom: 140px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 19px 32px;
+  width: 270px;
+  height: 57px;
+  background-color: #3596ed;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.hero-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+}
+
+.text-absolute {
+  position: absolute;
+  border: 1px solid #535755;
+  padding: 22px;
+  max-width: 161px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  top: 40px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.news-list {
+  display: flex;
+  gap: 28px;
+}
+
+.item-list-news {
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  max-width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-news {
+  display: block;
+}
+.news-info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news-footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+
+.title-news {
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+  font-size: 36px;
+  max-width: 596px;
+}
+
+.date-news {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.more-news {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+
+.more-news:hover::after {
+  transform: translateX(6px);
+}
+
+.more-news::after {
+  display: inline-block;
+  content: "";
+  background-image: url("../content/images/стрелка.svg");
+  width: 22px;
+  height: 9px;
+  transition: transform 0.3s;
+}
+
+.title-item-news {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+}
+
+.faq-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+.accordion {
+  max-width: 700px;
+}
+
+.accordion-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.accordion-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  padding: 0px 20px;
+}
+
+details {
+  border-block: 1px solid #d3cbd9;
+  margin-bottom: 20px;
+}
+
+.faq-main {
+  display: flex;
+  gap: 28px;
+}
+
+.accordion[open] summary::after {
+  transform: rotateX(180deg);
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 22px;
+  background: url("../content/images/стрелка (2).svg") no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq_section {
+  position: relative;
+}
+
+.faq_section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 215px;
+  width: calc(50% - 200px);
+  height: 48px;
+  background: url("../content/images/декор\ 2.svg") repeat-x;
+}
+
+.faq_section {
+  margin-bottom: 140px;
+}
