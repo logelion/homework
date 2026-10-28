@@ -11,8 +11,9 @@
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;
-  margin-top: 8px;
+  padding-top: 8px;
   transition: color 0.3s;
+  display: inline-block;
 }
 
 .contact {
