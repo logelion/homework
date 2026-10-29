@@ -1,0 +1,176 @@
+.title-branch {
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+  font-size: 36px;
+  max-width: 596px;
+}
+
+.article-main {
+  padding-top: 80px;
+}
+
+.text-branch,
+.text-group,
+.list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  margin-bottom: 20px;
+}
+
+.text-branch-mb {
+  margin-bottom: 80px;
+}
+
+.decoration-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.decoration-wrapper::before {
+  content: "";
+  background: url("../content/images/декор\ 2.svg") repeat-x;
+  position: absolute;
+  z-index: -1;
+  width: calc(50% - 200px);
+  height: 48px;
+}
+
+.decoration-wrapper-1::before {
+  top: 100px;
+  left: -350px;
+}
+
+.decoration-wrapper-2::before {
+  right: -350px;
+  top: 328px;
+}
+
+.title-large {
+  font-size: 48px;
+}
+
+.list {
+  margin-top: 0px;
+  padding-left: 16px;
+}
+
+.item::marker {
+  color: #3596ed;
+  height: 8px;
+  width: 8px;
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+.list-mb {
+  margin-bottom: 80px;
+}
+
+.decoration-wrapper {
+  margin-bottom: 80px;
+}
+
+.article-main {
+  margin-bottom: 40px;
+}
+
+.play-video {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  padding: 0px;
+  background-color: #3596ed;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+}
+
+.play-video:hover {
+  background-color: #4faaff;
+}
+
+.play-video:active {
+  background-color: #2a71b4;
+}
+
+@media (width <= 1440px) {
+  .decoration-wrapper::before {
+    display: none;
+  }
+}
+
+@media (width <= 992px) {
+  .title-branch {
+    font-size: 40px;
+  }
+
+  .article-main {
+    padding-top: 60px;
+  }
+}
+
+@media (width <= 768px) {
+  .article-main {
+    padding-top: 20px;
+  }
+
+  .text-branch-mb {
+    margin-bottom: 20px;
+  }
+
+  .title-large {
+    font-size: 40px;
+  }
+
+  .title-branch {
+    font-size: 36px;
+  }
+
+  .article-main {
+    padding-top: 40px;
+  }
+
+  .text-branch-mb {
+    margin-bottom: 30px;
+  }
+
+  .decoration-wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 576px) {
+  .title-branch {
+    font-size: 28px;
+  }
+
+  .title-large {
+    font-size: 32px;
+  }
+
+  .play-video {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-video img {
+    width: 18px;
+    height: 18px;
+  }
+}

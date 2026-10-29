@@ -1,0 +1,31 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  border-bottom: 1px solid #d3cbd9;
+  gap: 10px;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+  margin-top: 8px;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.contact {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+
+.number:hover {
+  cursor: pointer;
+  color: #3596ed;
+}
