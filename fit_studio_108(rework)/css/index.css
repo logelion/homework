@@ -1,0 +1,358 @@
+.hero {
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 106px;
+  width: 100%;
+  height: 48px;
+  background: url("../content/images/декор\ 2.svg") repeat-x;
+}
+
+.hero__container {
+  display: flex;
+  gap: 28px;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.hero__accent {
+  color: #3596ed;
+  font-weight: 600;
+}
+
+.hero__information {
+  max-width: 492px;
+}
+
+.hero__text,
+.hero__text--absolute {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.hero__text {
+  max-width: 440px;
+  margin-bottom: 140px;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 19px 32px;
+  width: 270px;
+  height: 57px;
+  background-color: #3596ed;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.hero__button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.hero__image {
+  position: relative;
+  display: flex;
+}
+
+.hero__text--absolute {
+  position: absolute;
+  border: 1px solid #535755;
+  padding: 22px;
+  max-width: 161px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  top: 40px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.news__list {
+  display: flex;
+  gap: 28px;
+}
+
+.news__item-list {
+  background-color: #fff;
+  border: 1px solid #d3cbd9;
+  max-width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 25%;
+}
+
+.news__img {
+  display: block;
+}
+.news__info {
+  padding: 20px 20px 0;
+  margin-bottom: 12px;
+}
+
+.news__footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
+}
+
+.news__title {
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+  font-size: 48px;
+  max-width: 596px;
+}
+
+.news__date {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.news__more {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+
+.news__more:hover::after {
+  transform: translateX(6px);
+}
+
+.news__more::after {
+  display: inline-block;
+  content: "";
+  background-image: url("../content/images/стрелка.svg");
+  width: 22px;
+  height: 9px;
+  transition: transform 0.3s;
+}
+
+.news__title-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.faq__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+}
+.faq__accordion {
+  max-width: 700px;
+}
+
+.faq__accordion-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.faq__accordion-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+details {
+  border-block: 1px solid #d3cbd9;
+  margin-bottom: 20px;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+.faq__container {
+  display: flex;
+  gap: 28px;
+}
+
+.faq__accordion[open] summary::after {
+  transform: rotateX(180deg);
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 17px;
+  height: 22px;
+  background: url("../content/images/стрелка (2).svg") no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 215px;
+  width: calc(50% - 200px);
+  height: 48px;
+  background: url("../content/images/декор\ 2.svg") repeat-x;
+}
+
+.faq {
+  margin-bottom: 140px;
+}
+
+@media (width <= 1440px) {
+  .hero__image img {
+    width: 50%;
+  }
+}
+
+@media (width <= 992px) {
+  .hero__container {
+    display: grid;
+    align-items: center;
+  }
+  .hero::after {
+    display: none;
+  }
+  .hero__information {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hero__text {
+    max-width: inherit;
+    margin-bottom: 40px;
+  }
+  .hero__title {
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  .news__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .news__item-list {
+    flex-basis: 50%;
+    max-width: 350px;
+  }
+
+  .news__img {
+    width: 100%;
+  }
+
+  .faq::before {
+    display: none;
+  }
+
+  .faq__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (width <= 768px) {
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .news__item-list {
+    flex-basis: 100%;
+    max-width: 400px;
+  }
+
+  .news__title,
+  .faq__title {
+    text-align: center;
+    font-size: 38px;
+    max-width: inherit;
+  }
+
+  .faq__accordion-title {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero__title {
+    font-size: 38px;
+  }
+  .hero__information {
+    max-width: 410px;
+  }
+  .hero {
+    padding-top: 20px;
+  }
+  .hero__text--absolute {
+    max-width: 125px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .news__title,
+  .faq__title {
+    font-size: 32px;
+  }
+
+  .faq__accordion-title {
+    font-size: 18px;
+  }
+}
