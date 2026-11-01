@@ -4,6 +4,7 @@
   right: 0;
   left: 0;
   padding-block: 32px;
+  z-index: var(--layer-1);
   transition: box-shadow var(--transition-delay);
   background-color: var(--bg-color);
 }
