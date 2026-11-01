@@ -36,7 +36,7 @@
     right: -100vw;
     top: 0;
     bottom: 0;
-    z-index: var(--layer-2);
+    z-index: var(--layer-3);
     min-width: 297px;
     /* padding-top: clamp(70px, 18.0662vw + 0.1407rem, 141px); */
     padding-top: clamp(70px, 25vh, 141px);
