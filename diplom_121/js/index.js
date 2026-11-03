@@ -1,4 +1,4 @@
-import HeaderFixed from "../../classwork/Nike/js/header.js";
+
 import BurgerMenu from "./burger.js";
 
 try {
