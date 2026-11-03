@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karaoke Club</title>
+    <link
+      rel="shortcut icon"
+      href="./content/icon/karaoke.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="#">
+          <img
+            class="logo-img"
+            src="./content/icon/harizma-logo.svg"
+            alt="Логотип harizma"
+          />
+        </a>
+        <div class="header__menu">
+          <a class="logo-adaptive" href="#">
+            <img
+              class="logo-img-adaptive"
+              src="./content/icon/harizma-logo.svg"
+              alt="Логотип harizma"
+              width="152"
+              height="28"
+            />
+          </a>
+          <div class="header__contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="menu__link">
+                  <button class="item__phone-icon contacts__button">
+                    <svg width="27" height="27">
+                      <use
+                        class="phone-img"
+                        href="./content/icon/sprite_header.svg#phone"
+                      ></use>
+                    </svg>
+                  </button>
+                  <a href="#" class="item__phone">+38 (097) 970-90-90</a>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="menu__link">
+                  <button class="item__geo-icon contacts__button">
+                    <svg width="20" height="29">
+                      <use
+                        class="geo-img"
+                        href="./content/icon/sprite_header.svg#geo"
+                      ></use>
+                    </svg>
+                  </button>
+                  <a href="#" class="item__geo">м. Лубянка</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header__buttons">
+            <ul class="buttons__list">
+              <li class="buttons__item">
+                <a href="#" class="menu__link buttons__link buttons__halls"
+                  >Наши залы</a
+                >
+              </li>
+              <li class="buttons__item">
+                <a
+                  href="./form.html"
+                  class="menu__link buttons__link buttons__reservation"
+                  >Забронировать
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="header__menu-adaptive">
+          <button class="item__geo-icon contacts__button">
+            <svg width="20" height="29">
+              <use
+                class="geo-img"
+                href="./content/icon/sprite_header.svg#geo"
+              ></use>
+            </svg>
+          </button>
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
+            <svg width="29" height="12">
+              <use
+                class="burger__icon-menu"
+                href="./content/icon/sprite_header.svg#burger"
+              ></use>
+              <use
+                class="burger__icon-cross"
+                href="./content/icon/sprite_header.svg#menu-cross"
+              ></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__title">
+            <h1 class="hero__title-main">Арендуй караоке-зал до 10 человек</h1>
+            <h2 class="hero__title-description">
+              Возьми алкоголь и еду с собой
+            </h2>
+          </div>
+          <a href="#" class="link-geo">м. Лубянка</a>
+          <div class="advantages">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a href="" class="checkmark"></a>
+                <p class="checkmark-text">Если хочешь попеть и оторваться</p>
+              </li>
+              <li class="hero__item">
+                <a href="" class="checkmark"></a>
+                <p class="checkmark-text">Хорошо провести время</p>
+              </li>
+              <li class="hero__item">
+                <a href="" class="checkmark"></a>
+                <p class="checkmark-text">Если хочешь попеть и оторваться</p>
+              </li>
+            </ul>
+            <a href="form.html" class="hero__button">Забронировать онлайн</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
