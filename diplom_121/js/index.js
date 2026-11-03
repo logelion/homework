@@ -1,5 +1,5 @@
 import HeaderFixed from "../../classwork/Nike/js/header.js";
-import BurgerMenu from "../../classwork/Nike/js/burger.js";
+import BurgerMenu from "./burger.js";
 
 try {
   const headerFixed = new HeaderFixed({
