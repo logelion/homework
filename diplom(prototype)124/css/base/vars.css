@@ -1,0 +1,19 @@
+:root {
+  /* font-family:  */
+  --font-family: "Muller", sans-serif;
+
+  /* container */
+  --container-width: 1830px;
+  --container-padding: 45px;
+  --container-padding-2: 30px;
+
+  /* transition */
+  --transition-delay: 0.3s;
+
+  /* layers */
+  --layer-super-negative: -3;
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

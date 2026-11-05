@@ -1,0 +1,25 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.page__body {
+  min-width: 375px;
+  background-color: #191b20;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+@media (width > 1440px) {
+  .container {
+    width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  }
+}
+
+@media (width <= 1440px) {
+  .container {
+    width: min(var(--container-width), 100% - var(--container-padding-2) * 2);
+  }
+}
