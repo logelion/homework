@@ -404,6 +404,7 @@
 
 .hero__footer-list {
   margin-inline: auto;
+  z-index: var(--layer-1);
 }
 
 .hero__footer {
