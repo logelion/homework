@@ -8,6 +8,7 @@
 .halls__title {
   position: absolute;
   top: 3%;
+  z-index: var(--layer-2);
 }
 
 /* HALLS-TEXT */
