@@ -179,10 +179,9 @@ summary {
 
   .faq__content-wrapper {
     flex: 1 1 auto;
-    min-width: 0; /* Защита от переполнения */
+    min-width: 0; 
   }
-
-  /* ДОБАВЛЕНО: Аккордеон всегда занимает 100% ширины своей колонки */
+  
   .faq__container-accordion {
     width: 100%;
   }
