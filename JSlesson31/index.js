@@ -82,13 +82,19 @@ const start = +prompt("Введи первое число для проверк�
 const end = +prompt("Введи второе число для проверки четности");
 function findFirstEven(start, end) {
   if (isNaN(start) || isNaN(end)) return "Введите корректные числа";
-  if (start % 2 === 0) {
-    return "1";
-  } else if (end % 2 === 0) {
-    return "2";
-  } else {
-    return "Четных чисел нету";
+  if (start > end) return "Некорректный диапазон";
+
+  function firstEven(start) {
+    if (start % 2 === 0) {
+      return start;
+    } else {
+      return start + 1;
+    }
   }
+  const result3 = firstEven(start);
+
+  return result3 <= end ? result3 : "Четных чисел нету";
 }
 
 console.log(findFirstEven(start, end));
+
