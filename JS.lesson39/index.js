@@ -5,17 +5,22 @@ const person = {
   hobby: "degradation",
 };
 
-const isEmpty = (person) => {
-  if ("lastName" in person) {
-    console.log(false);
-  } else {
-    console.log(true);
+console.log(person.firstName + "\n", person.age + "\n", person.hobby);
+
+const isEmpty = (objects) => {
+  console.log(person.firstName + "\n", person.age + "\n", person.hobby);
+
+  for (const key in objects) {
+    return false;
   }
+  return true;
 };
 
-isEmpty(person);
+const family = {
+  father: "none",
+};
 
-console.log(person.firstName + "\n", person.age + "\n", person.hobby);
+console.log(isEmpty(family));
 
 // exercise 3
 const task = {
