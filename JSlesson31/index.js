@@ -98,17 +98,23 @@ function findFirstEven(start, end) {
 
 console.log(findFirstEven(start, end));
 
-
 const findEven = (start, end) => {
   if (start > end) return "Некорректный диапазон";
 
   if (isNaN(start) || isNaN(end)) return "Некорректные числа";
 
+  let numbers = "";
   for (let i = start; i <= end; i++) {
     if (i % 2 == 0) {
-      console.log(i);
+      numbers += i + "\n";
     }
+  }
+
+  if (numbers) {
+    return numbers;
+  } else {
+    return "Четных чисел нет";
   }
 };
 
-// console.log(findEven(1, 10));
+console.log(findEven(1, 10));
