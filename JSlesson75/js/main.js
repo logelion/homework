@@ -52,7 +52,7 @@ const todosList = document.querySelector(".todos");
 const createTodoElement = (text) => {
   const list = document.createElement("li");
   list.classList.add("todo");
-  list.innerHTML = `
+  list.innerHTML = `	
     <div class="todo-text">${text}</div>
     <div class="todo-actions">
       <button class="button-complete button">&#10004;</button>
@@ -74,16 +74,7 @@ const handleCreateTodo = (todos, text) => {
   input.value = "";
 };
 
-form.addEventListener("submit", (event) => {
-  // и без этого тоже нихуя не работает
-  event.preventDefault();
-
-  const text = input.value.trim();
-  // без trim не работает нихуя
-  if (text) {
-    handleCreateTodo(todos, text);
-  }
-});
+form.addEventListener("submit", (event) => {});
 
 // При помощи метода querySelector получаем элементы .form, .input и .todos
 // Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
