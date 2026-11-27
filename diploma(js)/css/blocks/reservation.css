@@ -1,0 +1,253 @@
+.reservation {
+  background: #131517;
+  padding-bottom: 10px;
+}
+
+@media (width > 1440px) {
+  .reservation {
+    padding-top: 80px;
+  }
+}
+@media (width <= 1440px) {
+  .reservation {
+    padding-top: 60px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation__button-svg--next {
+  transform: translateX(2px);
+}
+
+.reservation__button-svg--prev {
+  transform: translateX(-2px);
+}
+
+.reservation__title-text {
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+@media (width > 1440px) {
+  .reservation__title-text {
+    font-size: 24px;
+  }
+}
+
+@media (width <= 1440px) {
+  .reservation__title-text {
+    font-size: 18px;
+  }
+}
+.reservation__item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.reservation__text-accent {
+  color: #f69020;
+}
+
+.reservation__content-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+@media (width > 1024px) {
+  .reservation__content-wrapper {
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+@media (width <= 1024px) {
+  .reservation__content-wrapper {
+    flex-direction: column;
+  }
+  .reservation__title {
+    font-size: 28px;
+  }
+}
+
+/* BUTTON */
+.reservation_selection-image {
+  display: flex;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+@media (width > 1540px) {
+  .reservation_selection-image {
+    gap: 35px;
+    margin-top: 35px;
+  }
+
+  .reservation__slider-button {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (width <= 1540px) {
+  .reservation_selection-image {
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .reservation__slider-button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (width <= 1440px) {
+  .reservation__slider-button {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.reservation__prev,
+.reservation__next {
+  border-radius: 50%;
+  background: #2e3441;
+}
+
+/* SVG */
+@media (width > 1440px) {
+  .reservation__item-svg {
+    width: 41px;
+    height: 41px;
+  }
+}
+
+@media (width <= 1440px) {
+  .reservation__item-svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* SLIDER */
+.reservation__slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.reservation__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.reservation__item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* --- СОСТОЯНИЯ И ЗАТЕМНЕНИЕ --- */
+
+.reservation__item-img-wrapper {
+  position: relative;
+}
+
+.reservation__item-img-wrapper--disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.reservation__item-img-wrapper--active::after {
+  display: none;
+}
+
+.reservation__item-content--disable {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.reservation__item-content--active {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@media (width > 992px) {
+  .reservation__slider {
+    gap: 106px;
+  }
+}
+@media (width <= 992px) {
+  .reservation__item-img {
+    width: 206px;
+    height: auto;
+  }
+
+  .reservation__item-img-wrapper {
+    width: 206px;
+  }
+
+  .reservation__item-content {
+    max-width: 206px;
+  }
+
+  .reservation__slider {
+    gap: 35px;
+  }
+}
+
+.reservation__item-content {
+  max-width: 252px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation__item-img-wrapper--disabled {
+  position: relative;
+}
+
+.reservation__item-img-wrapper--disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+.reservation__item-content--disable {
+  opacity: 0.5;
+}
+
+.reservation__item-img {
+  max-width: none;
+}
